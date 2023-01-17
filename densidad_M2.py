@@ -1,8 +1,7 @@
 import pandas as pd
 
-"""df = pd.read_csv('lista.csv')
-print(df)
-"""
+'''df = pd.read_csv('lista.csv')
+print(df)'''
 
 
 def density_per_m2(cities_df):
@@ -10,10 +9,5 @@ def density_per_m2(cities_df):
     return cities_df[{'City', 'Density  M2'}]
 
 
-cities_df = pd.read_csv("lista.csv")
-print(density_per_m2(cities_df))
-
-
-
-
-
+'''cities_df = pd.read_csv("lista.csv")
+print(density_per_m2(cities_df))'''
