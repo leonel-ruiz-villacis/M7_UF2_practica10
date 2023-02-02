@@ -1,10 +1,6 @@
 import pandas as pd
 
-def show_battery(data):
-    battery_power = data.loc[:, ["ID", "battery_power"]]
-    return battery_power
-
-
-data = pd.read_csv("test.csv")
-battery_power = show_battery(data)
-print(battery_power)
+def show_battery():
+    battery_power = pd.read_csv('test.csv', usecols=['id', 'battery_power'])
+    ba = battery_power.iloc[[3, 13, 34, 56, 70, 85, 110, 120, 210, 400]]
+    return ba
